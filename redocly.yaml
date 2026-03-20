@@ -1,0 +1,52 @@
+logo:
+  image: ./images/logo-light.png
+  altText: Musement
+
+plugins:
+  - plugins/sparkle.js
+
+openapi:
+  showExtensions: true
+
+decorators:
+  sparkle/x-updatedAt: on
+
+sidebar:
+  hide: true
+
+navbar:
+  items:
+    - label: API
+      href: /api/getting-started
+    - label: White label
+      href: /white-label
+    - label: Widgets
+      href: /widgets
+    - label: Analytics
+      href: /analytics
+    - label: Best practices
+      href: /api/best-practices
+    - label: Contact us
+      href: /contact-us
+    - label: Weather
+      href: /api/weather
+
+colorMode:
+  hide: true
+
+links:
+  - href: https://fonts.googleapis.com
+    rel: preconnect
+  - href: https://fonts.gstatic.com" crossorigin
+    rel: preconnect
+  - href: 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'
+    rel: stylesheet
+
+search:
+  shortcuts:
+    - cmd+k
+    - ctrl+k
+    - /
+
+footer:
+  copyrightText: Copyright © TUI Musement. All rights reserved.

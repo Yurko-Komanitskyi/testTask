@@ -1,0 +1,111 @@
+.wx-card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f2035 100%);
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  min-width: 260px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin: 16px 0;
+}
+
+.wx-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 4px 10px;
+  transition: border-color 0.15s;
+}
+.wx-form:focus-within {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.wx-search-icon {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.wx-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  padding: 6px 0;
+}
+.wx-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.wx-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: wx-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes wx-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wx-state {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.wx-state--error {
+  color: #fca5a5;
+}
+
+.wx-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wx-emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.wx-city {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.wx-condition {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.wx-temp {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.wx-unit {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+.wx-stats {
+  display: flex;
+  gap: 16px;
+}
+.wx-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  opacity: 0.85;
+}

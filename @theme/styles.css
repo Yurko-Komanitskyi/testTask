@@ -1,0 +1,44 @@
+@import "./index-page.css";
+@import "./markdoc/components/Weather/ui/weather.css";
+
+:root {
+  --color-primary: #fc6c4f;
+  --color-primary-hover: #e55a3d;
+  --color-primary-light: #fec0b3;
+  --color-white: #ffffff;
+  --color-white-transparent: rgba(255, 255, 255, 0.1);
+
+  --sidebar-background-color: #f8fafc;
+
+  --font-family-base: "Source Sans 3", sans-serif;
+  --font-family-headings: "Source Sans 3", sans-serif;
+
+  --link-color-primary: var(--color-primary);
+  --link-color-visited: var(--color-primary);
+  --link-color-primary-hover: var(--color-primary-light);
+  --link-color-primary-pressed: var(--color-primary);
+
+  --button-bg-color-primary: var(--color-primary);
+  --button-bg-color-primary-hover: var(--color-primary-light);
+  --button-bg-color-primary-pressed: var(--color-primary-light);
+
+  --navbar-bg-color: var(--color-primary);
+  --navbar-text-color: var(--color-white);
+  --navbar-item-font-weight: 600;
+  --navbar-item-text-color-hover: var(--color-white);
+  --navbar-item-bg-color-hover: transparent;
+  --navbar-item-text-color-active: var(--color-white);
+  --navbar-item-bg-color-active: var(--color-white-transparent);
+
+  --search-trigger-color: var(--color-white);
+  --search-trigger-border-width: 0;
+  --search-trigger-bg-color: var(--color-white-transparent);
+
+  --navbar-border: none;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--font-family-base);
+  box-sizing: border-box;
+}
